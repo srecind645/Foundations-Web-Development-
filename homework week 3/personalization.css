@@ -1,0 +1,51 @@
+h1{
+    font-family: Impact;
+    display: flex;
+    justify-content: center;
+    
+}
+nav{
+    background-color: rgb(19, 165, 202);
+    border-style:solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-style: none none none solid;
+    border-color: rgb(174, 236, 29);
+    grid-template-columns:auto  ;
+    grid-template-rows: auto;
+}
+body{
+    background-color: rgb(221, 195, 195);
+    
+}
+
+.text{
+    width: 200px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+.tested  {
+    color: rgb(60, 154, 17);
+
+}
+
+.grid-style {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
