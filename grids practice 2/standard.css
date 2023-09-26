@@ -1,13 +1,47 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
 .grid-container{
     display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: darkgreen;
+     min-height: 100%;
+    grid-template-columns: 1fr 2fr 3fr;
+    background-color: rgb(164, 215, 164);
     padding: 10px;
 
 }
 
-.grid-item{
-    background-color: brown;
+.grid-container > div{
+    background-color: rgb(197, 154, 154);
     border-style: solid;
     border-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.box-1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: 3fr;
+    font-family:'Lucida sans';
+
+}
+
+.grid-item1{
+   grid-row: 2/4; 
+}
+
+.grid-item9{
+    grid-column: 1/4;
+}
+
+.grid-item4{
+display: flex;
+align-content: space-around;
+font-family: 'Lucida sans';
+    
 }
