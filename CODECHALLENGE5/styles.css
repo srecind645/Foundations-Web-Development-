@@ -1,0 +1,35 @@
+nav{
+background-color: aqua;
+font-family: arial;
+}
+
+@media only screen and (max-width: 600px) {
+    .images  {
+      flex-direction:column;
+      justify-self: center;
+  }
+  .footer{
+    visibility: hidden;
+        height: 0;
+        padding: 0;
+  }
+  }
+
+
+.images {
+display: flex;
+justify-content: center;
+}
+
+
+
+
+.footer{
+    display: flex;
+    background-color: aqua;
+    height: 4rem;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
