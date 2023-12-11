@@ -1,35 +1,19 @@
-nav{
-background-color: aqua;
-font-family: arial;
-}
-
-@media only screen and (max-width: 600px) {
-    .images  {
-      flex-direction:column;
-      justify-self: center;
-  }
-  .footer{
-    visibility: hidden;
-        height: 0;
-        padding: 0;
-  }
-  }
-
-
-.images {
+body{
+background-color: chartreuse;
 display: flex;
 justify-content: center;
+align-items: center;
 }
 
+.button2 {
+    
+    background-color: yellow; 
+    width: 150px;
+    height: 50px;
+    margin-top: 300px;
+}  
 
-
-
-.footer{
-    display: flex;
+.button2:hover{
     background-color: aqua;
-    height: 4rem;
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
-    margin-top: auto;
 }
+

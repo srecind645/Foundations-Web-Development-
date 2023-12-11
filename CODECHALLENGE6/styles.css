@@ -1,0 +1,105 @@
+body{
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-left: 0%;
+}
+
+.navBar{
+    background-color: cadetblue; 
+    width: 100%;
+}
+
+.navBar > nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    
+}
+
+.navBar > .CompLogo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
+    align-self: center; 
+    padding-top: 30px;
+}
+
+ol {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-bottom: 2px;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family:Helvetica;
+    font-size: 35px;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+li {
+    padding: 20px;
+}
+.mainBox{ 
+    background-color: rgb(187, 190, 150);
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    height: fit-content;
+    font-size: 40px;
+    font-family:'Helvetica';
+    display: flex;
+    align-items: center;
+}
+
+.secondaryBox{
+    background-color: rgb(182, 150, 130);
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    height: fit-content;
+    font-size: 40px;
+    font-family:'Helvetica';
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    background-color: rgb(46, 205, 152);
+  width: 100%;
+}
+
+.footerImg{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+h1{
+    padding-left: 50px;
+    padding-right:50 px;
+}
+
+@media screen and (max-width: 798px) {
+   .navBar > nav{
+    display: flex ;
+    flex-direction: column;
+   }
+
+   .mainBox{
+    width: 100%;
+   }
+}
+
+
+
+
+

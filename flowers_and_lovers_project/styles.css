@@ -1,0 +1,346 @@
+body{
+  margin: 0%;
+  padding: 0%;
+}
+
+nav{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    height: 5rem;
+    align-items: center;
+    margin-bottom: -25px;   
+}
+
+nav > a{
+  text-decoration: none; 
+  font-family: sans-serif; 
+  color:rgb(255, 255, 255);
+  width:100px;
+  height:fit-content ;
+  font-size: 30px; 
+  margin-top: 2px;
+  margin-bottom:2px ;
+}
+
+a:hover{
+  background-color:rgb(94, 84, 84);
+}
+
+.Header{
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.openingImage, .openingImageAbout{
+  height: 300px;
+  display: block;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Georgia;
+  font-size: 70px;
+}
+
+
+.openingImage::after, .openingImageAbout::after {
+  content: "";
+  background: url(/flowers_and_lovers_project/images/roses_background.jpeg) no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.mainBox{ 
+  background-color: rgb(128, 128, 128);
+  display: flex;
+  justify-content: space-around;
+  width:100%;
+  height: fit-content;
+}
+
+  .mainBox > h1{ 
+  font-size: 40px;
+  font-family: 'Gabriola';
+  display: flex;
+  align-items: center;
+}
+
+.featuredProducts{
+  display: flex;
+  justify-content: center;
+  font-family:'Times New Roman';
+  font-weight: normal;
+  font-size: 70px;
+}
+
+
+
+.carousel {
+  position: relative;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+  margin-top: 26px;
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 100;
+}
+
+.carousel-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+  display: block;
+  margin-right:auto;
+  margin-left: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+.carousel-control {
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+
+.carousel-control.prev {
+  left: 2%;
+}
+
+.carousel-control.next {
+  right: 2%;
+}
+
+.carousel-control:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+  display: block;
+}
+
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.carousel-bullet {
+  color: rgb(51, 49, 49);
+  cursor: pointer;
+  display: block;
+  font-size: 35px;
+}
+
+.carousel-bullet:hover {
+  color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+  color: #428bca;
+}
+
+#title {
+  width: 100%;
+  position: absolute;
+  padding: 0px;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 27px;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Open Sans', sans-serif;
+  z-index: 9999;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+
+.OrdenaButton{
+  display:flex;
+  justify-content:center;
+border-style: solid;
+background-color: rgb(131, 44, 44);
+width: 600px;
+text-decoration: none;
+font-family: Arial;
+font-size: 40px;
+margin-top: 100px;
+margin-bottom: 100px;
+border-width: 0px;
+margin-left: auto;  
+  margin-right: auto;
+text-align: center;
+}
+
+
+.OrdenaButton:hover{
+  background-color: #6e6767;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  font-size: 30px;
+  font-family: 'Times New Roman';
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.image-container {
+  margin-bottom: 20px; 
+}
+
+.LanguageButton{
+    display:flex;
+    justify-content:center;
+  border-style: solid;
+  background-color: rgb(131, 44, 44);
+  width: 600px;
+  font-size: 40px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-width: 0px;
+  margin-left: auto;  
+    margin-right: auto;
+  text-align: center;
+  }
+
+  .LanguageButton:hover{
+    background-color: #6e6767;
+  }
+
+.contactList{
+margin: 50px;
+ }
+
+
+ .contactList{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
+ .contactList > a{
+ display: flex;
+ justify-content: center;
+  text-decoration: none; 
+  font-family: 'Arial'; 
+  color:rgb(0, 0, 0);
+  width:200px;
+  height:60px;
+  font-size: 30px; 
+  margin-top: 10px;
+  margin-bottom:10px;
+  background-color: #848484;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.contactList> p{
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  font-family: 'Times New Roman';
+}
+.contactList > a:hover{
+background-color: #6e6767;
+}
+
+.shopItems > div{
+  background-color: rgb(177, 210, 239);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+
+footer {
+  background-color: #8a8a8a; 
+  padding: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  body{
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  nav{
+    display: flex;
+    flex-direction: column;
+    height: 13rem;
+    align-items: center;
+    margin-bottom: 1px;
+  }
+  a{
+    padding-bottom: 5px;
+    padding-top:5px;
+  }
+  .bodyImg1, .bodyImg2{
+    display: none;
+
+    
+  }
+
+  .openingImage>p{
+    font-size: 30px;
+  }
+
+  nav{
+    margin-bottom: 70px ;
+  }
+}
